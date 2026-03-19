@@ -1,19 +1,11 @@
-name: CI HTML
+name: Test simple
 
-on:
-  push:
-    branches:
-      - VERIF
+on: [push]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Test HTML
-        run: |
-          echo "Checking HTML"
-          cat index.html
+      - name: Test
+        run: echo "ça marche"
