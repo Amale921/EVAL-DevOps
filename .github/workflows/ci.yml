@@ -1,4 +1,4 @@
-name: Test HTML
+name: Test simple
 
 on: [push]
 
@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Forcer erreur
-        run: exit 1
+      - name: Test
+        run: echo "ça marche"
